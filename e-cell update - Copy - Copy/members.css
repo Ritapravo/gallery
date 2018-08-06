@@ -1,0 +1,301 @@
+*{
+	margin:0px; padding:0px;
+}
+body{
+	background:#F9F8F6; //#EFEEEC
+}
+
+/*===============================Header Part==============================*/
+
+h1{
+	text-align:center;
+	font-family:Impact;
+	font-size:50px;
+	color:#333;
+	margin:0px;
+	padding:0px;
+}
+
+#header{
+	width:100%;
+	height:60px;
+}
+
+#navbar{
+	width:90%;
+	height:60px;
+	margin-left:5%;
+	margin-right:5%;
+}
+#navbar>li{
+	width:20%;
+	list-style:none;
+	float:left;
+	padding-left:2.5%;padding-right:2.5%;
+	box-shadow:0px 1px 0px gray;
+}
+
+
+li>a{
+	display:block;
+	color:black;
+	line-height:60px;
+	text-align:center;
+	font-family:Calibri;
+	font-size:20px;
+	text-decoration:none;
+	opacity:0.6;
+	//padding-left:2.5%;//padding-right:2.5%;
+}
+li>a:hover{
+	border-bottom:5px solid skyblue;
+	opacity:1.0;
+	height:55px;
+}
+
+li>a.highlight{
+	height:55px;
+	border-bottom:5px solid blue;
+	opacity:1.0;
+
+}
+
+/*==================================MAIN CONTAINER============================*/
+
+
+
+
+#container{
+	width:90%;
+	margin: 0px auto;
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom:5%;
+	height:100%;
+}
+
+
+
+
+
+/*==================================TEXT DECORATION============================*/
+
+
+h3{
+	margin:0px;
+}	
+
+h4{
+	opacity:0.7;
+	font-size:105%;
+}
+
+p{
+	opacity:0.6;
+	font-family:Tahoma;
+	font-size:90%;
+}
+
+.mem{
+	margin:0px;width:80%;padding-left:10%;padding-right:10%;
+}	
+
+
+
+
+
+/*=======================================ADDITIONAL=====================================*/
+
+
+#quarterRaja{
+	width:25%;float:left;padding-left:10%;margin:0px;
+}
+
+#quarter2Raja{
+	width:40%;float:left;margin:0px;
+}
+#empty2{
+	width:100%;
+	height:80px;
+	float:left;
+	opacity:0;
+}
+
+
+/*=====================================Joint Secretary=================================*/
+
+
+
+#quarter{
+	width:25%;float:left;padding:0px;margin:0px;
+}
+#quarter2{
+	width:25%;float:left;padding:0px;margin:0px;
+}
+
+
+
+/*===========================================CORE==========================================*/
+
+
+#quarterCore{
+	width:30%;float:left;padding-left:3%;margin:0px;
+}
+
+
+#half{
+	width:24%;float:left;padding-left:1%;margin:0px;
+}
+
+/*==========================================MEMBERS======================================*/
+#full{
+	width:30%;
+	float:left;padding-left:3%;
+}
+
+
+.mem{
+	margin:0px;width:80%;padding-left:10%;padding-right:10%;
+}	
+
+
+
+/*=============================IMAGE HOVER EFFECTS============================*/
+
+.container2{
+	position:relative;
+	text-align:center;
+	cursor:pointer;
+	overflow:hidden;
+}
+.image{
+	//position:relative;
+	width:250px;
+	height:250px;
+	float:left;
+	//height:auto;
+	transition:all 0.s ease-in;
+	width:80%;height:width;margin-left:10%;margin-right:10%;
+	border:1px solid black;
+	overflow:hidden;
+}
+
+
+span{
+	position:absolute;
+	color:#fff;
+	top:50%;
+	left:50%;
+	float:left;
+	font-family:sans-serif;
+	font-size:16px;
+	transform:translate(-50%,-50%);
+	opacity:0;
+	transition:all 0.5s ease-in;
+	font-weight:250px;
+	overflow:hidden;
+}
+
+.container2:hover .image{
+
+	transform:scale(1.0);
+	transition:all 1s ease in;
+	filter:brightness(0.5);
+	overflow:hidden;
+}
+
+.container2:hover span{
+	font-size:15px;
+	opacity:1;
+	transition:all 0.5s ease-in;
+	overflow:hidden;
+}
+
+.image2{
+	height:20px;
+	width:20px;
+	padding-top:5%;
+	padding-left:5%;
+}
+.image2:hover{
+	width:25px;
+	//height:25px;
+}
+
+
+
+
+
+/*=============================DESIGNING WIDTH FOR DIFFERENT SCREEN SIZES============================*/
+
+
+*@media screen and (max-width:1260px){
+	#navbar {width:90%;}
+	#navbar>li{width:25%;}
+	
+}
+
+/*=============================DESIGNING WIDTH FOR DIFFERENT SCREEN SIZES============================*/
+
+@media screen and (max-width:1060px){
+	#header{width:100%;height:60px;}
+	#navbar{width:90%;height:60px;float:right;margin-left:5%;margin-right:5%;}
+	#navbar>li{width:25%;padding-left:0%;padding-right:0%;}
+	li>a{line-height:55px;font-size:13px;}
+	#container{width:90%;padding-right:5%;}
+	#quarter{width:25%;float:left;padding:0px;margin:0px;}
+	#quarter2{width:25%;float:left;padding:0px;margin:0px;}
+	
+	#quarter2Raja{width:50%;float:left;margin:0px;
+}
+	
+	.image{width:80%;margin-left:10%;margin-right:10%;height:100%;}
+	.image3{width:80%;margin:0px;height:100%;padding-left:10%;padding-right:10%;}
+	p{font-size:80%;}
+	h2{font-size:100%;}
+	.mem{font-size:80%;}
+	
+	li>a:hover{height:50px;}
+
+	li>a.highlight{height:50px;}
+	
+	span{font-size:14px;}
+	
+}
+
+/*=============================DESIGNING WIDTH FOR DIFFERENT SCREEN SIZES============================*/
+
+@media screen and (max-width:600px){
+	#header{width:100%;height:40px;}
+	h1{font-size:30px;}
+	#navbar{width:80%;height:40px;float:none;margin-left:10%;margin-right:10%;}
+	#navbar>li{width:80%;list-style:none;padding-left:10%;padding-right:10%;//border-bottom:1px solid skyblue;}
+	li>a{display:block;line-height:40px;font-size:16px;}
+	#container{width:100%;padding:0%;}
+	.image{width:80%;height:80%;margin:10%;}
+	.image3{width:100%;height:80%;padding-top:10%;padding-left:0%;padding-right:0%;}
+	#quarter{width:100%;}
+	#quarter2{width:80%;float:none;margin-left:0px;margin-right:0px;padding-left:10%;padding-right:10%;}
+	
+	#quarterRaja{width:100%;padding:0;margin:0px;}
+	#quarter2Raja{width:80%;float:none;margin-left:0px;margin-right:0px;padding-left:10%;padding-right:10%;}
+	
+	#quarterCore{width:100%;padding:0;margin:0px;}
+	
+	#half{width:100%;padding:0;margin:0px;}
+	
+	#empty{width:0px;height:0px;}
+	#empty2{width:0px;height:0px;}
+	h2{font-size:100%;}
+	
+	
+	li>a:hover{height:35px;}
+
+	li>a.highlight{height:35px;	}
+	
+	span{font-size:17px;}
+	
+	.mem{width:100%;font-size:100%;padding:0;text-align:center;margin:0;}
+	#full{width:100%;margin-left:0px;margin-right:0px;padding:0;text-align:center;}
+
+}
